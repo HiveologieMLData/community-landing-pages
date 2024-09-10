@@ -1,0 +1,93 @@
+<div class="parent">
+<style>
+.parent {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(10, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+.header-sidebar-toggle{
+  display:none;
+}
+
+.parent div{
+  padding: 20px;
+}
+
+.parent h1,h2{
+  text-align:center;
+  color: white;
+}
+
+body.has-sidebar-page #main-outlet-wrapper{
+  grid-template-columns: 0 minmax(0, 1fr) !important;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 7; }
+.div2 { grid-area: 2 / 1 / 3 / 7; }
+.div3 { 
+  grid-area: 3 / 1 / 5 / 4;
+  background:pink;
+  border-radius : 40px;
+
+}
+div.div4 { 
+  grid-area: 3 / 4 / 5 / 7;
+  border : 1px solid red;
+}
+.div5 { 
+  grid-area: 5 / 1 / 7 / 3;
+  background: lightgreen;
+}
+.div6 { 
+  grid-area: 5 / 3 / 7 / 5;
+  background: yellow;
+}
+.div7 { grid-area: 5 / 5 / 7 / 7; }
+.div8 { grid-area: 7 / 1 / 8 / 4; }
+.div9 { grid-area: 7 / 4 / 8 / 7; }
+.div10 { grid-area: 8 / 1 / 9 / 4; }
+.div11 { grid-area: 8 / 4 / 9 / 7; }
+.div12 { grid-area: 9 / 1 / 10 / 4; }
+.div13 { grid-area: 9 / 4 / 10 / 7; }
+.div14 { grid-area: 10 / 1 / 11 / 4; }
+.div15 { grid-area: 10 / 4 / 11 / 7; }
+
+.topic{
+  background: lightblue;
+}
+
+</style>
+
+<div class="div1">
+  <h1>Home page / User dashboard</h1>
+  </div>
+<div class="div2">
+ <h1>User information</h1>
+ </div>
+<div class="div3"> 
+  <h1>Accountability Dashboard</h1>
+  </div>
+<div class="div4">
+  <h1>Next Topic Live</h1>
+</div>
+<div class="div5"> 
+  <h1>Podcast</h1>
+ </div>
+<div class="div6">
+  <h1>Micro Tactics Library</h1>
+</div>
+<div class="div7"> 
+  <h1>Playbook Originals</h1>
+  </div>
+<div class="div8 topic"> <h2>Topic/Products</h2> </div>
+<div class="div9 topic">  <h2>Topic/Products</h2> </div>
+<div class="div10 topic">  <h2>Topic/Products</h2> </div>
+<div class="div11 topic">  <h2>Topic/Products</h2> </div>
+<div class="div12 topic">  <h2>Topic/Products</h2> </div>
+<div class="div13 topic">  <h2>Topic/Products</h2> </div>
+<div class="div14 topic">  <h2>Topic/Products</h2> </div>
+<div class="div15 topic">  <h2>Topic/Products</h2> </div>
+</div>
