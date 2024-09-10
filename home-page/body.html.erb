@@ -69,15 +69,7 @@
   </div>
 <div class="div2">
  <h1>User information</h1>
-  <%= user_profile(
-              user,
-              avatar_size: 120,
-              show_groups: ['developers', 'designers', 'project_managers', 'board'],
-              add_bio: true,
-              top_extra: "<ul class='user-links'>
-                <li><a class='btn btn-icon' href='#{Discourse.base_url}/new-message?username=#{user.username}'>#{SvgSprite.raw_svg('envelope')}</a></li>
-              </ul>".strip
-            ) %>
+  
  </div>
 <div class="div3"> 
   <h1>Accountability Dashboard</h1>
