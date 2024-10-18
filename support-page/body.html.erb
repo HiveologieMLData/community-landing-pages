@@ -10,7 +10,9 @@
 .cards-wrapper{
     display: flex;
     column-gap:10px;
+    row-gap:10px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .n-card{
@@ -20,12 +22,17 @@
     justify-content: center;
     align-items: center;
     display : flex;
-    flex-wrap: wrap;
     flex-direction: column;
     row-gap: 10px;
     flex-basis: 100%;
     font-size: 24px;
 
+}
+
+@media(min-width: 700px){
+    .n-card{
+        flex-basis: 50%;
+    }
 }
 
 
