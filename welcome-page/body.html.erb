@@ -29,6 +29,7 @@
 
 .benefit{
     display:flex;
+    flex-direction: column;
     column-gap: 25px;
 }
 .benefit-text{
@@ -39,6 +40,11 @@
 
 
 @media(min-width: 700){
+    .benefit{
+   
+    flex-direction: row;
+    
+}
     .benefits{
         flex-direction: row !important;
     }
