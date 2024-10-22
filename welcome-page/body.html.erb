@@ -99,10 +99,32 @@
     position: relative;
 }
 
+#back-to-aa-button:hover
+{
+    color: white;
+    
+}
+#back-arrow{
+    transition: all .1s ease-in-out;
+}
+#back-to-aa-button:hover #back-arrow{
+  transform: translateX(-3px);
+  fill: white;
+  
+}
+
+
+.image-wrapper{
+    margin-top: 30px;
+}
+
 
 @media(min-width: 700px){
     .benefit{
     flex-direction: row;
+}
+    .image-wrapper{
+    margin-top: 45px;
 }
     .benefit-title {
         font-size: 40px;
