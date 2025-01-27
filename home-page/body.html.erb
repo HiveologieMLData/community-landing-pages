@@ -1,4 +1,13 @@
 <div class="parent">
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', (e)=>{
+        const footerText = document.querySelector("#footer-text");
+        if(footerText){
+            footerText.innerHTML = `Hiveologie ${new Date().getFullYear()}`;
+        }
+
+    })
+</script>
 <style>
   .parent {
   display: grid;
