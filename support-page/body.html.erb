@@ -1,3 +1,12 @@
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', (e)=>{
+        const footerText = document.querySelector("#footer-text");
+        if(footerText){
+            footerText.innerHTML = `Hiveologie ${new Date().getFullYear()}`;
+        }
+
+    })
+</script>
 <style>
 *{
     box-sizing: border-box;
@@ -193,5 +202,5 @@ hr.rounded {
 
 </div>
 <div id="footer">
-    <div>Hiveologie 2025</div>
+    <div id="footer-text">Hiveologie 2025</div>
 </div>
