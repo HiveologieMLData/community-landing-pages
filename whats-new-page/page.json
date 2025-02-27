@@ -1,4 +1,5 @@
 {
     "name": "What's new?",
-    "path": "whats-new"
-  }
+    "path": "whats-new",
+    "groups" : [1]
+}
